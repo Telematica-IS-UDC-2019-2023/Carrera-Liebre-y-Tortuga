@@ -50,14 +50,13 @@ let tortuga = new Tortuga('Tortuman');
 let liebre = new Liebre('Copito');
 while (tortuga.posicion < 90 && liebre.posicion < 90) {
     tortuga.acciones();
-    console.log(`${tortuga.nombre} avanzó a: ${tortuga.posicion}`);
     liebre.acciones();
-    console.log(`${liebre.nombre} avanzó a: ${liebre.posicion}`);
+    console.log(`${tortuga.nombre} avanzó a: ${tortuga.posicion} | ${liebre.nombre} avanzó a: ${liebre.posicion}`);
 }
 if (tortuga.posicion >= 90 && liebre.posicion >= 90) {
-    console.log('Ambos empataron');
+    console.log('¡Ambos empataron!');
 } else if (tortuga.posicion >= 90) {
-    console.log(`${tortuga.nombre} ganó`);
+    console.log(`¡${tortuga.nombre} ganó!`);
 } else if (liebre.posicion >= 90) {
-    console.log(`${liebre.nombre} ganó`);
+    console.log(`¡${liebre.nombre} ganó!`);
 }
